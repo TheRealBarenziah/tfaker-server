@@ -10,9 +10,6 @@
   "keywords": [
     "tfaker.js"
   ],
-  "dependencies": {
-    "http-server": "0.2.1"
-  },
   "author": "TheRealBarenziah",
   "license": "Unlicense"
 }
