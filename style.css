@@ -1,0 +1,25 @@
+BODY {
+  text-align: center;
+  background-color: black;
+}
+
+P, H1, H2 {
+  color: red
+}
+
+H1 {
+  display: inline;
+}
+
+H2 {
+  text-decoration: underline;
+}
+
+IMG {
+  display: inline;
+}
+
+#glorious-footer {
+  margin-bottom: 0;
+  font-size: 14px;
+}
