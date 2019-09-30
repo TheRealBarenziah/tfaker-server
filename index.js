@@ -8,8 +8,8 @@ var port = 9615;
 
 http.createServer(function (request, response) {
   try {
-    console.log(request)
     var requestUrl = url.parse(request.url);
+    if (request.url !== "/index.html") requestUrl = "/index.html";
 
     // need to use path.normalize so people can't access directories underneath baseDirectory
     var fsPath = baseDirectory + path.normalize(requestUrl.pathname);

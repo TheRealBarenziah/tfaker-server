@@ -1,0 +1,14 @@
+{
+  "name": "tfaker",
+  "version": "0.0.1",
+  "description": "tfaker.js intends to be the Targaryen-themed little brother of faker.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./tests/index.js"
+  },
+  "keywords": [
+    "tfaker"
+  ],
+  "author": "TheRealBarenziah",
+  "license": "TARGARYEN_UNLICENSE"
+}
