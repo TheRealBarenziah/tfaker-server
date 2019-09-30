@@ -7,10 +7,9 @@ var baseDirectory = __dirname;   // or whatever base directory you want
 var port = 9615;
 
 http.createServer(function (request, response) {
+  console.log(request);
   try {
-    console.log(request)
     var requestUrl = url.parse(request.url);
-
     // need to use path.normalize so people can't access directories underneath baseDirectory
     var fsPath = baseDirectory + path.normalize(requestUrl.pathname);
 
