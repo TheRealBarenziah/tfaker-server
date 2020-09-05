@@ -2,8 +2,12 @@ function getRandomElementFromArray (array) {
   return array[Math.floor(Math.random() * array.length)];
 };
 
-function mklocation () {
+function westerosLocation () {
   return getRandomElementFromArray(cities);
+}
+
+function dragon() {
+  return getRandomElementFromArray(dragons);
 }
 
 function email () {
@@ -29,7 +33,7 @@ function email () {
     return randomWord + "chan" + random + randomDomain;
   }
   if ( ( 50 < random ) && ( random <= 75 ) ) {
-    return "uwu" + randomWord + "qt" + Math.floor(random / 10) + "uwu" + randomDomain;
+    return randomWord + "qt" + Math.floor(random / 10) + "uwu" + randomDomain;
   }
   else return randomWord + random + randomDomain;
 };
@@ -180,11 +184,40 @@ var cities = [
   'Moat Cailin',
   'Last Hearth' ];
 
+var dragons = [
+  "Arrax",
+  "Balerion",
+  "Caraxes",
+  "Dreamfyre",
+  "Drogon",
+  "Grey Ghost",
+  "Meleys",
+  "Meraxes",
+  "Moondancer",
+  "Morghul",
+  "Morning",
+  "Quicksilver",
+  "Rhaegal",
+  "Seasmoke",
+  "Sheepstealer",
+  "Shrykos",
+  "Silverwing",
+  "Stormcloud",
+  "Sunfyre",
+  "Syrax",
+  "Tessarion",
+  "Tyraxes",
+  "Vermax",
+  "Vermithor",
+  "Vhagar",
+  "Viserion",
+];
 
 document.getElementById('locationp').innerHTML = "Click the button <3";
 document.getElementById('the-button').addEventListener('click', function(){
   document.getElementById('fullnamep').innerHTML = fullName();
   document.getElementById('emailp').innerHTML = email();
-  document.getElementById('locationp').innerHTML = mklocation();
+  document.getElementById('locationp').innerHTML = westerosLocation();
+  document.getElementById('dragonp').innerHTML = dragon();
 });
 
