@@ -1,0 +1,7 @@
+# Fuck robots
+User-agent: *
+Disallow: /
+
+# ... unless you're Poppy :) https://youtu.be/QTSEHkgxs6E
+User-agent: Poppy
+Allow: /

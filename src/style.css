@@ -14,7 +14,16 @@ H2 {
 IMG {
   display: inline;
 }
-#the-footer {
+SECTION {
+  display: flex;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
   margin-bottom: 0;
   font-size: 14px;
 }
